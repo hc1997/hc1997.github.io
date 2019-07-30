@@ -15,27 +15,207 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.css" integrity="sha256-+bpMasWDxDlsVpNW3oZlL7L4RacwsP70u2fZt6Rxrmc=" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Telex&display=swap" rel="stylesheet"> 
     <title>Haren</title>
+    <style>
+.carousel 
+{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.navbar-dark 
+{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.jumbotron 
+{
+    /*padding:70px 30px 70px 30px;*/
+    margin-bottom: 55px;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    color:floralwhite;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.row-header
+{
+	margin: 0px auto;
+	padding: 0px auto;
+}
+
+.row-content
+{
+	margin: 0px auto;
+	/*padding: 50px 0px 50px 0px;*/
+	border-bottom: 1px ridge;
+	min-height: 400px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.media-body
+{
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 20px;
+}
+.footer
+{
+	font-family: 'Montserrat', sans-serif;
+}
+.modal-body
+{
+	font-family: 'Telex', sans-serif;
+	font-size: 16px;
+	/*background-color:#ffccff; */
+}
+
+.modal-header
+{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+	color: floralwhite;
+}
+
+h3
+{
+	font-family: 'Telex', sans-serif;
+}
+
+h2
+{
+	font-family: 'Montserrat', sans-serif;	
+}
+
+.footer
+{
+	font-family: 'Montserrat', sans-serif;
+}
+.col-auto
+{	
+	font-family: 'Lobster', cursive;
+	font-size: 25px;
+}
+
+address
+{
+    font-size:20px;
+    margin:0px;
+}
+
+.context-dark, .bg-gray-dark, .bg-primary 
+{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active 
+{
+    color: #ffffff;
+}
+
+.nav-list li 
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before 
+{
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol 
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.social-container .col 
+{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-list li a:before 
+{
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+
+.carousel-item 
+{
+  height: 300px;
+}
+
+.badge
+{
+	margin-left: 250px;
+}
+
+.carousel-caption
+{
+	margin-left: 300px;
+	margin-top: -150px;
+} 
+
+.carousel-item img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 200px;
+}
+    </style>
 </head>
-<body style="background-color: black">
-    <div>
-        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-            <div class="container">
-                <div class="collapse navbar-collapse" id="Navbar">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#top"><i class="fa fa-home"></i>Hc</a></li>
-                        <li class="nav-item"><a class="nav-link" href="Resume/HAREN_CV.html"><i class="fa fa-certificate"></i>Resume</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skill"><i class="fa fa-certificate"></i>Skills</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#main-footer"><i class="fa fa-phone"></i>Contact</a></li>
-                    </ul>
-                </div>
+<body style="background-color:white">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                      <li class="nav-item active"><a class="nav-link" href="#About"><i class="fa fa-home"></i>HC </a></li>
+                <li class="nav-item"><a class="nav-link" href="#Project"><i class="fa fa-building" ></i> Project</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Education"><i class="fa fa-graduation-cap" ></i> Educations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Skills"> <i class="fa fa-cogs" aria-hidden="true"></i>Skills </a></li>
+                <!-- <li class="nav-item "><a class="nav-link" href="#Certification"> <i class="fa fa-certificate"></i> Certification</a></li>
+                <li class="nav-item "><a class="nav-link" href="#AwardsandAchivements"> <i class="fa fa-trophy"></i>Awards</a></li> -->
+                <li class="nav-item"><a class="nav-link" href="/home/haren/Downloads/HarenUpdatedCV/HarenCV/HAREN_CV.html   "> <i class="fa fa-file"></i> Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="#Contact"> <i class="fa fa-phone"></i> Contact</a></li>
+                </ul>
             </div>
-            </nav><br><br><br>
+            </nav>  
+            </nav><br><br><br>  
             <header class="jumbotron" id="top">
                 <div class="container">
                     <div class="row row-header">
                         <div class="col-12 col-sm-7">
-                            <h1>About</h1>
+                            <h1><strong>ABOUT</strong></h1>
                             <p><strong>Hey,you are Looking at
                                     HAREN CHRUNGOOs portfolio.</strong><br>I hail from Jammu and Kashmir ,completed 
                                     my B.Tech in Computer Science in 2019 from Shri Mata Vaishno Devi University,katra.
@@ -47,120 +227,488 @@
                             <img src="resources/imgtwo.jpg" class="img-thumbnail rounded float-right">
                         </div>
                     </div>
-                    <h1>Professional Objective</h1>
+                    <h1><strong>OBJECTIVE</strong></h1>
                          <p> Seeking a learning opportunity with a organization which offers opportunities for personal
                                 and professional development and where I can best utilize and enhance my knowledge and skills in the field
                                 of my interest and research areas by working in the real world environment.</p>
                 </div>
             </header><br><br>
 
-
-<div class="jumbotron" id="skill">
-    <div class="container">
-        <h1 class="display-2 text-left"><Strong>Skills</Strong></h1>
-        <blockquote class="blockquote text-left">
-            <p class="mb-0 increase_font ">“They know enough who know how to learn.”</p>
-            <footer class="blockquote-footer"><cite title="Source Title">Henry Adams</cite></footer>
-        </blockquote><br><br>
-        <h2 class="display-4">Masai School helped me to learn:-</h2><br>
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Html</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Css</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">JavaScript</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Git</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">React</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Jquery</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Bootstrap</a>
-            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Algorithms</a>
-        </div>
-    </div>
-</div>
-<!-- <div class="jumbotron" id="skill">
-    <div class="container"> 
-        <h2>Carousel Example</h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-                  
-                      <div class="carousel-inner">
-                        <div class="item active">
-                          <img src="https://www.instagram.com/p/BzI2QLehXs-/?utm_source=ig_web_copy_link" alt="Los Angeles" style="width:100%;">
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col">
+                        <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                          <img class="d-block img-fluid" src="resources/one.jpg" width="440" alt="Design">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2>  <span class="badge badge-danger">CAMPUS</span></h2>
+                              <p class="d-none d-sm-block">My School</p>
+                            </div>
                         </div>
-                  
-                        <div class="item">
-                          <img src="https://www.instagram.com/p/BysrDfeBtmi/?utm_source=ig_web_copy_link" alt="Chicago" style="width:100%;">
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="resources/two.jpg" width=" 420" alt="Design2">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2> <span class="badge badge-danger">SCHOOL CAMPUS</span></h2>
+                              <p class="d-none d-sm-block">My School Building</p> 
+                            </div>
                         </div>
-                      
-                        <div class="item">
-                          <img src="https://www.instagram.com/p/BxfUUbghe40/?utm_source=ig_web_copy_link" alt="New york" style="width:100%;">
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="resources/three.jpg" width="450" alt="Design4">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2> <span class="badge badge-danger">COLLEGE CAMPUS</span></h2>
+                                <p class="d-none d-sm-block">My college .</p>
+                            </div>
                         </div>
-                        <div class="item">
-                                <img src="https://www.instagram.com/p/BsTMuizhRj6/?utm_source=ig_web_copy_link" alt="New york" style="width:100%;">
-                              </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="resources/four.jpg" width="450" alt="Design4">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2> <span class="badge badge-danger">COLLEGE INFRASTRUCTURE</span></h2>
+                                <p class="d-none d-sm-block">My college in jammu.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="resources/one.jpg" width="490" alt="Design7">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2>K.C Public School,Jammu <span class="badge badge-danger">MY SCHOOL</span></h2>
+                                <p class="d-none d-sm-block"></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="resources/two.jpg" width="490" alt="Design7">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2>K.C Public School,Jammu<span class="badge badge-danger">MY SCHOOL</span></h2>
+                                <p class="d-none d-sm-block"></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="resources/three.jpg" width="450"  alt="Design5">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2>Shri Mata Vasihno Devi University <span class="badge badge-danger">Campus</span></h2>
+                                <p class="d-none d-sm-block"></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block img-fluid" src="resources/four.jpg" width="450"  alt="Design6">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h2>Shri Mata Vasihno Devi University <span class="badge badge-danger">Academic Block</span></h2>
+                                <p class="d-none d-sm-block"></p>
+                            </div>
+                        </div>
                       </div>
-                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                            <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                            <span class="sr-only">Next</span>
-                          </a>
-                  
- </div>
- </div> -->
-
-<footer class="page-footer font-small special-color-dark pt-4" id="main-footer">
-    <div class="container">
-            <ul class="list-unstyled list-inline text-center">
-            <li class="list-inline-item">
-                <a class="btn-floating btn-fb mx-1" href="https://facebook.com/haren.chrungoo" target="blank" style="color:#3c5a9a">
-                    <i class="fa fa-facebook-f"></i>              
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1" href="https://twitter.com/haren_79" target="blank" style="color:skyblue">
-              <i class="fa fa-twitter"> </i>
-            </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-li mx-1" href="https://www.linkedin.com/in/haren-chrungoo-826753151/"target="blank" style="color:white" >
-                    <i class="fa fa-linkedin"> </i>
-                </a>
-             
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-instagram mx-1" href="https://www.instagram.com/koshur_kott_/?hl=en" target="blank" style="color:palevioletred">
-                 <i class="fa fa-instagram"> </i>
-              </a>
-            </li>
-          </ul>
-        </div>
-     </footer>
-      <!-- Footer -->
-        <!-- <div>
-            <h2 style="text-align: center;font-family:'Josefin Sans',sans-serif; color: white"><strong>Hey,the thing you are Looking at is
-                 HAREN CHRUNGOOs portfolio</strong>, ahh!,<br></h2><h5 style="font-family: Cinzel,serif; color: whitesmoke">The Stubborn Guy from North(Always Brings Winter alongwith,LOL!)</h5><br>
-                 <div><br>
-                    <hr style='background-color: #707070'>
-                    <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color: white;text-align: left">ABOUT ME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Core Interest</h3>
-                    <p style="color: white; text-align: left; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">Full Stack Developer,Masai School,
-                        <br>wanderlust soul,traveller,photography enthusiast,trekker.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Html,Css,Javascript,React,Git,MySql.</p>
-                    <img style="margin-left:45px; height: 140% ;width: 38%; " alt = "superman" src="/home/haren/hc1997.github.io/resources/imgtwo.jpg">
+                      <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                        <li data-target="#mycarousel" data-slide-to="3"></li>
+                        <li data-target="#mycarousel" data-slide-to="4"></li>
+                        <li data-target="#mycarousel" data-slide-to="5"></li>
+                        <li data-target="#mycarousel" data-slide-to="6"></li>
+                        <li data-target="#mycarousel" data-slide-to="7"></li>
+                      </ol>
+                    </div>
+                  </div>
                 </div>
-        </div> -->
-        
+              </div>
+                
+              <br>
+              <br>
+
+              <div class="container" style="background: white">
+                    <h2 id="Education"><strong>EDUCATION</strong></h2>
+                    <div class="row">
+                      <ul class="list-unstyled">
+                        <li class="media">
+                          <img src="resources/logo2.jpg"class="mr-3" alt="Logo of College" width="100">
+                          <div class="media-body" >
+                            <h5 class="mt-0 mb-1">B.Tech Computer Science Engineering</h5>
+                              Shri Mata Vaishno Devi University,katra,Jammu <br>
+                              2015 - 2019 <br>
+                              CGPA : 6.7 
+                          </div>
+                        </li>
+                        <li class="media my-4">
+                          <img src="resources/logo1.jpg" class="mr-3" alt="School logo" width="100">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Higher Secondary School</h5>
+                              K.C.Public School,Jammu,J&K <br>
+                              2013 - 2015 <br>
+                              Percentage : 78 %
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img src="resources/logo1.jpg" class="mr-3" alt="School logo" width="100">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">SECONDARY SCHOOL </h5>
+                            K.C.Public School,Jammu,J&K <br>
+                            2011 - 2013 <br>
+                              CGPA : 9.2 
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <br>
+                  <br>
+                  <br>
+                  
+                  
+                  
+                  <div class="container">
+                    <h2 id="Project"><strong>PROJECTS</strong></h2>
+                      <div class="row row-content align-items-center">
+                       <div class="col-sm-5 mt-4">
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><b>Super Hero (Super Man)</b></h5><br>
+                              <h6 class="card-subtitle mb-2 text-muted">Jun 14,2019</h6>
+                              <p class="card-text">Domain : HTML,CSS</p>
+                               <!-- <a href="#" class="card-link">Read More</a> -->
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project_four">
+                                Read More
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-5 mt-4">
+                          <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title"><b>TypeWriter</b></h5><br>
+                                <h6 class="card-subtitle mb-2 text-muted">Jun 21,2019</h6>
+                                <p class="card-text">Domain : HTML,CSS, Javascript</p>
+                                 <!-- <a href="#" class="card-link">Read More</a> -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project_five">
+                                  Read More
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                  
+                        <div class="col-sm-5 mt-4">
+                          <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title"><b>Expense Managment System</b></h5><br>
+                                <h6 class="card-subtitle mb-2 text-muted">Jun 28,2019</h6>
+                                <p class="card-text">Domain : HTML,CSS,Javascript</p>
+                                 <!-- <a href="#" class="card-link">Read More</a> -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project_six">
+                                  Read More
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                  
+                        <div class="col-sm-5 mt-4">
+                          <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title"><b>Open Movie Database Using API</b></h5><br>
+                                <h6 class="card-subtitle mb-2 text-muted">July 05,2019</h6>
+                                <p class="card-text">Domain : HTML,CSS,Javascript</p>
+                                 <!-- <a href="#" class="card-link">Read More</a> -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project_seven">
+                                  Read More
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-sm-5 mt-4">
+                          <div class="card">
+                              <div class="card-body">
+                                <h5 class="card-title"><b>Open Movie Database Using API and Sorting Algorithm</b></h5>
+                                <h6 class="card-subtitle mb-2 text-muted">July 12,2019</h6>
+                                <p class="card-text">Domain : HTML,CSS,Javascript and DataStructures</p>
+                                 <!-- <a href="#" class="card-link">Read More</a> -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project_eight">
+                                  Read More
+                                </button>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <br><br>
+                    <!-- Project Form-->
+                    
+                  
+                   
+                  
+                     
+                  
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <div class="modal fade" id="project_four" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h3 class="modal-title" id="project_one">Super Hero(Super Man) - MasaiSchool Week1 Project </h3>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  This is the First Project in the Masai School which is to create a Super Hero page for Magneto (X-Men) using HTML and CSS.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <a href="https://github.com/hc1997/masai-week-1" target="_blank" class="btn btn-primary">View Project</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <div class="modal fade" id="project_five" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h3 class="modal-title" id="project_one">TypeWriter - MasaiSchool Week2 Project </h3>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  This is the Second Project in the Masai School which is to create a TypeWriter using HTML, CSS and Javascript. In the project there is a main functionality called Password. If the password button is clicked the typed letter in the screen will be hidded except the last letter and again we can disable the password button.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <a href="https://github.com/hc1997/masai-week-2" target="_blank" class="btn btn-primary">View Project</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <div class="modal fade" id="project_six" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h3 class="modal-title" id="project_one">Stock Management System - MasaiSchool Week3 Project </h3>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  This is the Third Project in the Masai School which is to create a Stock management system using HTML, CSS and Javascript. In which the project is to add the items/product in the cart and to deduct the product from the cart.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <a href="https://github.com/hc1997/masai-week-3" target="_blank" class="btn btn-primary">View Project</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <div class="modal fade" id="project_seven" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h3 class="modal-title" id="project_one">Open Movie Database Using API - MasaiSchool Week4 Project </h3>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  This is the Fourth Project in the Masai School which is to create a Open Movie Database using HTML, CSS, Javascript and API. This project is to get the details of the movie from the json file using api. 
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <a href="https://github.com/hc1997/masai-week-4" target="_blank" class="btn btn-primary">View Project</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <div class="modal fade" id="project_eight" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h3 class="modal-title" id="project_one">Open Movie Database Using API and Sorting Algorithm - MasaiSchool Week5 Project </h3>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  This is the Fifth Project in the Masai School which is to create a Open Movie Database using HTML, CSS, Javascript, API and Sorting algorithm in Datastructures. This project is to get the details of the movie from the json file using api. The project is to search the word in the type of genre (eg:Comedy, Action, Drama etc ...) and Sorting can be done through year and box_office. You can sort in either in ascending order or descending order (i.e) Low to High and High to Low.
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                  <a href="https://github.com/hc1997/masai-week-5" target="_blank" class="btn btn-primary">View Project</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  <div class="container">
+                        <h2 id="Skills"><strong>SKILLS</strong></h2>
+                          <div class="col-sm-5 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="progress-wrap">
+                              <br>
+                              <h3>HTML</h3>
+                              <div class="progress">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax ="100" style="width:80%"> <span>80%</span>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="progress-wrap">
+                              <br>
+                              <h3>CSS</h3>
+                              <div class="progress">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0" 			aria-valuemax ="100" style="width:80%"> <span>80%</span>
+                                </div>
+                              </div>
+                            </div>
+                                  
+                            <div class="progress-wrap">
+                              <br>
+                              <h3>Javascript</h3>
+                                <div class="progress">
+                                  <div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0" 			aria-valuemax ="100" style="width:70%"> <span>70%</span>
+                                  </div>
+                                </div>
+                            </div>
+                      
+                            <div class="progress-wrap">
+                              <br>
+                              <h3>React</h3>
+                                <div class="progress">
+                                  <div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0"       aria-valuemax ="100" style="width:75%"> <span>70%</span>
+                                  </div>
+                                </div>
+                            </div>
+                                  
+                            <div class="progress-wrap">
+                              <br>
+                              <h3>Bootstrap</h3>
+                              <div class="progress">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax ="100" style="width:85%"> <span>80%</span>
+                                </div>
+                              </div>
+                            </div>
+                      
+                            <div class="progress-wrap">
+                              <br>
+                              <h3>C</h3>
+                              <div class="progress">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax ="100" style="width:70%"> <span>70%</span>
+                                </div>
+                              </div>
+                            </div>
+                      
+                           
+                      
+                            <div class="progress-wrap">
+                              <br>
+                              <h3>C++</h3>
+                              <div class="progress">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax ="100" style="width:65%"> <span>65%</span>
+                                </div>
+                              </div>
+                            </div>
+                      
+                            <div class="progress-wrap">
+                              <br>
+                              <h3>MySQL</h3>
+                              <div class="progress">
+                                <div class="progress-bar color-1" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax ="100" style="width:80%"> <span>70%</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <br>
+                      
+
+
+                        <footer class="footer section footer-classic context-dark bg-image" style="background: #2d3246;">
+                                <div class="container">
+                                  <div class="row row-30">
+                                    <div class="col-md-4 col-xl-5">
+                                      <div class="pr-xl-4"><a class="brand" href=""><img class="brand-logo-light"></a>
+                                        <p></p>
+                                        <p class="rights">
+                                          <span>© 2019  </span><br>
+                                        <span>HarenChrungoo</span><br>
+                                        <span>All Rights Reserved</span>
+                                        </p>
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="col-md-4">
+                                      <h5 id="Contact">Contacts</h5>
+                                        <dl class="contact-list">
+                                          <dt>Address:</dt>
+                                            <dd>Janipur,<br>Jammu-180013 <br>Jammu and Kashmir
+                                            </dd>
+                                        </dl>
+                                        <dl class="contact-list">
+                                          <dt>Email:</dt>
+                                            <dd><a href="harenchrungoo@gmail.com">harenchrungoo@gmail.com</a></dd>
+                                        </dl>
+                                        <dl class="contact-list">
+                                          <dt>Phones:</dt>
+                                            <dd><a href="tel:#">9419170161</a> <span>,</span> <a href="tel:#">9906397651</a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="col-md-4 col-xl-3">
+                                      <h5>Links</h5>
+                                        <ul class="nav-list">
+                                          <li><a href="#About">About</a></li>
+                                          <li><a href="#Project">Projects</a></li>
+                                          <li><a href="#Education">Education</a></li>
+                                          <li><a href="#Skills">Skills</a></li>
+                                          <li><a href="#Certification">Certification</a></li>
+                                          <li><a href="#Contact">Contact</a></li>
+                                        </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row no-gutters social-container">
+                                  <div class="col-sm-5">
+                                    <div class="container">
+                                        <a class="btn btn-lg btn-social-icon btn-google" href="http://google.com/"><i class="fa fa-google"></i></a>
+                                      <a class="btn btn-lg btn-social-icon btn-facebook" href="https://www.facebook.com/haren.chrungoo"><i class="fa fa-facebook"></i></a>
+                                      <a class="btn btn-lg btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/haren-chrungoo-826753151/"><i class="fa fa-linkedin"></i></a>
+                                      <a class="btn btn-lg btn-social-icon btn-twitter" href="https://twitter.com/haren_79"><i class="fa fa-twitter"></i></a>
+                                      <a class="btn btn-lg btn-social-icon btn-github" href="https://github.com/hc1997"><i class="fa fa-github"></i></a>
+                                      <a class="btn btn-lg btn-social-icon btn-instagram" href="https://www.instagram.com/koshur_kott_/"><i class="fa fa-instagram"></i></a>
+                                      <!-- <a class="btn btn-social-icon" href="harenchrungoo@gmail.com"><i class="fa fa-envelope-o"></i></a> -->
+                                    </div>        		
+                                  </div>
+                                </div>
+                              </footer> 
 </body>
 </html>
